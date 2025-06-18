@@ -1,0 +1,14 @@
+# Konfigurační soubory
+.env
+*.env
+*.ini
+
+# NPM moduly
+node_modules/
+
+# Logy
+*.log
+
+# Systémové soubory (volitelné, ale doporučené)
+.DS_Store
+Thumbs.db
