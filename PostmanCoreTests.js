@@ -475,6 +475,7 @@ function checkResponseBodyJsonSchema(schema) {
       pm.response.to.have.jsonSchema(schema);
     } catch (error) {
       pm.expect.fail(`Error validating JSON Schema: ${error.message}`);
+      console.error(`checkResponseBodyJsonSchema() - Error.message: ${error.message}`);
     }  
   })
 }
@@ -509,6 +510,7 @@ function checkRequestBodyJsonSchema(schema) {
       pm.expect(requestBody).to.have.jsonSchema(schema);
     } catch (error) {
       pm.expect.fail(`Error validating JSON Schema: ${error.message}`);
+      console.error(`checkRequestBodyJsonSchema() - Error.message: ${error.message}`);
     }
   });
 }
